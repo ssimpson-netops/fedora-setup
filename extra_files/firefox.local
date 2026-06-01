@@ -1,0 +1,2 @@
+#Allows file transfers from the ~/Transfers to allow Google/Proton Drive functionality on sandboxed instances.
+whitelist ${HOME}/Transfers

@@ -1,0 +1,2 @@
+This folder exists to allow file transfers to browser sessions. Place files intended for transfer into this folder.
+/etc/firejail/firefox.local has an entry that will allow the firefox firejail profile to access this folder only.
