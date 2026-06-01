@@ -60,7 +60,7 @@ A comprehensive, production-ready automated setup script for Fedora KDE with col
 ##  Required Files Structure
 ```
 .
-├── fedora-install.sh                    # Main setup script
+├── fedora-setup.sh                    # Main setup script
 ├── update-grub-background.sh          # GRUB background updater script
 └── extra_files/
     ├── grub_background.png            # Custom GRUB background image
@@ -73,8 +73,8 @@ A comprehensive, production-ready automated setup script for Fedora KDE with col
 ### 1. Download/Clone the Script
 ```bash
 # Option 1: Clone repository
-git clone https://github.com/ssimpson-netops/fedora-install.git
-cd fedora-install
+git clone https://github.com/ssimpson-netops/fedora-setup.git
+cd fedora-setup
 
 # Option 2: Download files manually
 # Make sure you have all files in the correct structure
@@ -89,13 +89,13 @@ Ensure you have these files in the `extra_files/` directory:
 
 ### 3. Make Scripts Executable
 ```bash
-chmod +x fedora-install.sh
+chmod +x fedora-setup.sh
 chmod +x update-grub-background.sh
 ```
 
 ### 4. Run the Script
 ```bash
-./fedora-install.sh
+./fedora-setup.sh
 ```
 
 The script will prompt you for your desired hostname at the start.
@@ -333,7 +333,7 @@ For detailed recovery procedures, see [RECOVERY.md](RECOVERY.md).
 ```bash
 # Check what failed (error message shows the step)
 # Re-run the script - many operations are idempotent
-./fedora-install.sh
+./fedora-setup.sh
 
 # Or run specific sections manually
 ```
@@ -600,10 +600,10 @@ If you encounter issues:
 ls extra_files/  # Should contain: grub_background.png, .zshrc, fedora-logo-grayscale.ico
 
 # 2. Make scripts executable
-chmod +x fedora-install.sh update-grub-background.sh
+chmod +x fedora-setup.sh update-grub-background.sh
 
 # 3. Run setup
-./fedora-install.sh
+./fedora-setup.sh
 
 # 4. Follow prompts and wait ~30-60 minutes
 
